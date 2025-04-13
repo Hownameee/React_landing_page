@@ -1,4 +1,4 @@
-# Turbo Monorepo Project
+# React Monorepo Project
 This project is structured as a **monorepo** using [Turborepo](https://turbo.build/). It includes separate `backend` and `frontend` applications, each managed independently within the same repository.
 ## 🛠️ Installation
 Make sure you have **Node.js** and **npm** installed.
