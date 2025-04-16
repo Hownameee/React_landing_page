@@ -1,16 +1,20 @@
 # React Monorepo Project
 This project is structured as a **monorepo** using [Turborepo](https://turbo.build/). It includes separate `backend` and `frontend` applications, each managed independently within the same repository.
 ## 🛠️ Installation
-Make sure you have **Node.js** and **npm** installed.
+Make sure you have **Node.js** and **pnpm** installed.
+Install pnpm
+```bash
+npm install pnpm@latest
+```
 Then, clone the repo and run:
 ```bash
-npm install
+pnpm install
 ```
 This will install all dependencies across the entire monorepo.
 ## 🚀 Running the Project
 To start the development servers (both frontend and backend if configured with Turbo):
 ```bash
-npm run dev
+pnpm dev
 ```
 This will run the turbo pipeline and start the necessary services.
 ## 📁 Project Structure
