@@ -6,12 +6,12 @@ export default function Form({ title }: { title: string }) {
 
   const handleGet = async () => {
     const res = await trpc.get.query("");
-    setText(res.greeting);
+    setText(res.data);
   };
 
   const handlePost = async () => {
     const res = await trpc.post.query(text);
-    setText(res.greeting);
+    setText(res.data);
   };
 
   return (

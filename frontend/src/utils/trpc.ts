@@ -1,9 +1,13 @@
 import { createTRPCClient, httpBatchLink } from "@trpc/client";
+import { appConfig } from "../../../backend/src/appConfig";
+
+const { hostname, port }: { hostname: string; port: number } = appConfig;
+console.log(`http://${hostname}:${port}/`)
 
 export const trpc = createTRPCClient({
   links: [
     httpBatchLink({
-      url: "http://127.0.0.1:4000/",
+      url: `http://${hostname}:${port}/`,
     }),
   ],
 });

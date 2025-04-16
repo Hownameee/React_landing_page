@@ -6,10 +6,10 @@ const t = initTRPC.create();
 const appRouter = t.router({
   get: t.procedure
     .input((val) => val)
-    .query(({ input }) => ({ greeting: "Hello world!!" })),
+    .query(({ input }) => ({ data: "Great!!" })),
   post: t.procedure
     .input(z.string())
-    .query(({ input } : { input: string }) => ({ greeting: input.toUpperCase() })),
+    .query(({ input } : { input: string }) => ({ data: input.toUpperCase() })),
 });
 
 export default appRouter;
