@@ -1,4 +1,4 @@
-export default function FeatureBlock({ src, title, text }) {
+export default function FeatureBlock({ src, title, text } : {src: string, title: string, text: string}) {
   return (
     <div className="feature-container">
       <div className="feature-block">
