@@ -1,8 +1,8 @@
 import { useState } from "react";
+import { url } from "../config"
 
 export default function Form({ title }: { title: string }) {
   const [text, setText] = useState("");
-  const url = 'http://localhost:4000'
 
   const handleGet = async () => {
     const res = await fetch(`${url}/hello`)
