@@ -12,7 +12,7 @@ app.use(cors({
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.text({ type: 'text/plain' }));
 
-app.use(express.static("/public"));
+app.use(express.static("./public"));
 
 app.get('/hello', (req, res) => {
     return res.send("Hello World")
